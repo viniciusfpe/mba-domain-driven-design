@@ -66,7 +66,7 @@ describe('Event Entity Unit Tests', () => {
 
     expect(event.is_published).toBe(true);
 
-    const [section1, section2] = event._sections.values();
+    const [section1, section2] = event.sections.values();
     expect(section1.is_published).toBe(true);
     expect(section2.is_published).toBe(true);
 
